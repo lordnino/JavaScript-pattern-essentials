@@ -65,3 +65,16 @@ that best represents the item we are trying to mode or abstract out.
 For example, if we need to create a customer object, we are interested in their name, contact, information, and purchase history perhaps. if, on the other hand, we need 
 to model a new hire, say a javascript programmer, we are more interested in their education, skill level, years of experience, and salary requirements. The interesting 
 thing is that both are people, but we are abstracting out only what is of interest of us at the that time.
+
+## **Inheritance**
+
+There are two different ways that objects can relate to each other. In OO these are often referred to as "has a" or "is a" relationships; more formally composition and inheritance relationships.
+
+When an object reference another object, this is called object composition because the object "has an" object.  
+Inheritance is when an object derives data and functionality from an ancestor object, in other words it "is an" instance of an ancestor object.  
+The main purpose of **Composition and Inheritance** are code resuability.
+
+Many programmers are familiar with classical inheritance in which a class derives (extends) from another class.  
+By inheriting the class obtains the data and the behavior from the ancestor class.  
+Inheritance is fully supported in Javascript, but through a different mechanism, called **prototypal inheritance**.  
+Each object in JavaScript has a prototype object from which it derives properties and methods.
