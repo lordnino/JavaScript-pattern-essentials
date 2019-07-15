@@ -78,3 +78,12 @@ Many programmers are familiar with classical inheritance in which a class derive
 By inheriting the class obtains the data and the behavior from the ancestor class.  
 Inheritance is fully supported in Javascript, but through a different mechanism, called **prototypal inheritance**.  
 Each object in JavaScript has a prototype object from which it derives properties and methods.
+
+## **Polymorphism**
+
+The word polymorphism literally means many forms. It is the ability to create multiple objects that to the program appear 
+of the same type but they are different. this is accomplished by creating objects that have the same interface (properties and methods) but their concrete 
+implementation is very different.
+
+Suppose we are modeling different zoo animals; a swan, a monkey, and an elephant. All these animals have a skin and they can move and talk.  
+To model these we create for each an object with the following iterface: a skin property and two methods: move and talk.

@@ -7,7 +7,7 @@ let Toyota = function(color) {
     this.color = color;
 }
 
-Toyota.prototype = new Car(); // set Car as 'ancestor' object
+Toyota.prototype = new Car();               // set Car as 'ancestor' object
 
 let toyota = new Toyota('red');
 console.log(toyota.color);                  // => red
