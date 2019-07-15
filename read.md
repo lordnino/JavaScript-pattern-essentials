@@ -56,3 +56,12 @@ The private modidfier does not allow any access from outside the object; protect
 
 Javascript does not support access modifiers, this is not always desirable, but fortunately, a number of techinques and patterns have been developed over the last 
 few years that allows you to protect and encapsulate the data in your objects. All these are based on the concept of function clousre which will be discussed shortly.
+
+## **Data Abstraction**
+
+Data abstraction refers to the development of objects that are abstractions of real world concepts. This is done primarily by defining an interface (properties or methods) 
+that best represents the item we are trying to mode or abstract out.
+
+For example, if we need to create a customer object, we are interested in their name, contact, information, and purchase history perhaps. if, on the other hand, we need 
+to model a new hire, say a javascript programmer, we are more interested in their education, skill level, years of experience, and salary requirements. The interesting 
+thing is that both are people, but we are abstracting out only what is of interest of us at the that time.
