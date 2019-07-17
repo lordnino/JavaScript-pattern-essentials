@@ -87,3 +87,95 @@ implementation is very different.
 
 Suppose we are modeling different zoo animals; a swan, a monkey, and an elephant. All these animals have a skin and they can move and talk.  
 To model these we create for each an object with the following iterface: a skin property and two methods: move and talk.
+
+## **loose coupling**
+
+Loose coupling means there is low degree of dependency among objects. Loose coupling is a design 
+goal that seeks to reduce the interdependencies between objects with the goal of reducing reducing the risk that changes in one object
+will require changes in any other object.
+
+Coupling is a measure of how much direct knowledege an object has about another object. The more its knows, the more tightly coupled it is 
+with that object.  
+Tight coupling creates highly interdependent systems that are much harder to change and maintain.  
+Coupling is not limited to objects; it also plays a role at the component level, which in javascript equates to modules.
+
+Loosely coupling can be measured by the number of changes that are required when, for example a property or a method is added or removed from an interface.  
+Or possibly the entire interface of a utility object is changed, how much is affected by this change?
+
+The goal of loose coupling is to create systems that are flexible and are easy to maintain.
+
+## **High Choesion**
+
+Objects with high cohesion are those that are highly focused and have elements that form a coherent group and they truly belong to together.  
+Cohesion is a measure of how strongly related each piece of code is forming a comprehensive unit of functionality.  
+Object with high cohesion are preferred because they are reliable, resubale, understandble, and easier to maintain.
+
+In fact, high cohesion goes hand in hand with loose coupling. Systems that are loosely coupled often have objects that have high cohesion and vise versa
+
+It is important to note that cohesion exists within objects and modules, whereas coupling exists between objects and modules.
+
+## SOLID Prinicples
+
+We should point out that there is a fair amount of overlap between the five SOLID princible, the four OO characteristics, and the notion of loose coupling and high 
+cohesion: their common aim is to create a better objects models.
+
+SOLID is a set of object-oriented principles that are considered essential for good object-oriented designs.
+
+The SOLID principles do not tell whether a conceptual objcet model is correct or not, that is, it does not show whether the objcet model is a good representation 
+of the system being modeled. Instead it focuses on object dependencies and how objects relate to each other.  
+The underlying idea is that when objects and their dependencies are well managed application will be robust, flexible, reusable, and reasier to maintain.
+
+Here are the five SOLID prinicples():  
+* Single Responsibility Principle.
+* Open Closed Princible
+* Liskov Substituion Principle
+* Interface Segregation Principle
+* Dependecy Inversion Principle
+
+## single responsibility priniciple
+
+The single responsibility principle state that an object should have one, and only one, reason to exit.  
+This is one
+
+## open closed principle
+
+The open closed priniciple relates to the extensibility of objects and states that an object should be extensible without modifying it. 
+That is. it should be open for extension, closed for modification.
+If the only way to extend an object's behavior is by changing current code, you quickly risk negatively impacting the existing code base.
+
+The open-Closed principle clearly applies to javascript. Javascript library plugins area a good example offering a 'prescribed' way to extension.
+
+## Liskov Substitution Priniciple
+
+Essentially it is saying that when exending a base object the original base functionality should remain intact. An extension should cannot 
+change the functionality of the object it is extending.
+
+## Interface Segeregation priniciple
+
+The interface segeregation principle state the following: make fine-grained interfaces that are client specific.  
+This relate to the cohesion of the an object's responsibility and related interface.  
+Essentialy the interface represents a contract and this principle states that it should be unambiguous what it does and which clients it supports.  
+The interface segregation principle promotes clarity, ease of use, and long term maintainability.
+
+## Dependency Inversion Principle
+
+The dependency inversion principle state that you should depend on abstractions, not concretions, that is, program against interfaces, not objects
+
+## The DRY principle
+
+DRY stands for don't repeat yourself, it aims to avoid code duplications.  
+Whenever you find yourself writing functionality that already exists somewhere else in your project, or worse, you cut-copy-paste this code, 
+it is time to step back and rethink your approach.  
+Usually you should factor the code out into a shared method, object, or module that exposes the necessary functionality which can then be shared across 
+th project.
+
+## Rule of Three
+
+The rule of three is another principle. The rule of three states that under certain circumstances allowing to copies of the same code may be fine.  
+The idea is that you should only start refactoring when the code is repeated three times, because only then the necessary abstraction becomes clear.
+
+## Deep Dive: Prototypes in Javascript
+
+**What is a prototype ?**  
+A prototype is a regular object from which other objects inherit properties. Each object has an internal prototype property that points to a 
+prototype object from which it inherits all members.
